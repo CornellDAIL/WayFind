@@ -4,7 +4,7 @@ Made by Arthur Wayne with help from PhD Candidate Qi Yang and Professor Saleh Ka
 ![alt text](https://github.com/CornellDAIL/WayFind/blob/main/images/sample.gif)
 
 ## Description
-This project was initially created as a research tool to track behavioral markers and indoor location data given the lack of any existing accurate, low-cost options. However, WayFind was created with modularity in mind so that researchers can tailor it to their specific research needs.
+This project was initially created as a research tool to track behavioral markers and indoor location data given the lack of any existing accurate, low-cost options. However, WayFind was created with modularity in mind so that researchers of any discipline can tailor it to their specific research needs.
 
 ## Setup
 WayFind is being run on Python v. 3.9.12.
