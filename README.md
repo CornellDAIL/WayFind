@@ -23,9 +23,13 @@ WayFind utilizes the following libraries and versions for its functionality:
 ### Start
 
 Once you've installed run WayFind, open your command prompt and run
-  `python start.py`
-Or
-  `python3 start.py`
+
+`python start.py`
+
+or
+
+`python3 start.py`
+
 Depending on how your Python installation is set up.
   
 ### Mode Selection
