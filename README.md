@@ -20,16 +20,30 @@ WayFind utilizes the following libraries and versions for its functionality:
 - datetime (legacy)
 - logging (legacy)
 
-### Modularity
+### Start
 
-#### The Map
+Once you've installed run WayFind, open your command prompt and run
+  python start.py
+Or
+  python3 start.py
+Depending on how your Python installation is set up.
+  
+### Mode Selection
 
-#### Buttons
+There are two currently supported modes of WayFind:
+1. Live Tracking
+2. Validation
 
-#### Survey
+## Modularity
 
-#### Markers
+### The Map
 
-#### Landmarks
+### Buttons
 
-#### Live Tracking vs. Validation
+### Survey
+
+### Markers
+
+### Landmarks
+
+### Live Tracking vs. Validation
