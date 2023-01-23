@@ -1,5 +1,6 @@
 # WayFind: modular behavioral research and data collection tool
 Made by Arthur Wayne with help from PhD Candidate Qi Yang and Professor Saleh Kalantari. 
+
 ![alt text](https://github.com/CornellDAIL/WayFind/blob/main/images/sample.gif)
 
 ## Description
