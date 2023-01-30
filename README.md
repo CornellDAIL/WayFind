@@ -40,7 +40,7 @@ There are two currently supported modes of WayFind:
 1. Live Tracking
 2. Validation
 
-<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/modes.png" width=75px height=60px>
+<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/modes.png" width=150px height=150px>
 
 ## Modularity
 
