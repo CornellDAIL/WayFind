@@ -9,7 +9,7 @@ WayFind was created a multi-modal research tool to track behavioral markers and 
 ## Setup
 WayFind is being run on Python v. 3.9.12.
 
-### Dependencies
+### 1. Dependencies
 WayFind utilizes the following libraries and versions for its functionality:
 - tkinter (v. 8.6)
 - pandas (v. 1.3.5)
@@ -22,7 +22,7 @@ WayFind utilizes the following libraries and versions for its functionality:
 
 Please install them prior to start.
 
-### Start
+### 2. Start
 
 Once you've installed run WayFind, open your command prompt and run
 
@@ -34,7 +34,7 @@ or
 
 Depending on how your Python installation is set up.
   
-### Mode Selection
+### 3. Mode Selection
 
 There are two currently supported modes of WayFind:
 1. Live Tracking
