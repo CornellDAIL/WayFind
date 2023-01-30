@@ -4,7 +4,7 @@ Made by Arthur Wayne, Qi Yang, and Saleh Kalantari.
 ![alt text](https://github.com/CornellDAIL/WayFind/blob/main/images/sample.gif)
 
 ## Description
-WayFind was created a multi-modal research tool to track behavioral markers and indoor location data given the lack of any existing accurate, low-cost options. In field studies that DAIL conducted utilizing WayFind, it was run on a Microsoft Surface tablet with a stylus. However, WayFind was created with modularity in mind—it can be run on any platform or device, and researchers of any discipline can tailor it to their specific research needs.
+WayFind was created a multi-modal research tool to track live indoor location and behavioral marker data given the lack of any existing accurate, low-cost options. GPS, Wifi, Bluetooth methods are not cost-effective nor feasible to use within an multi-story builidng, in this case <a href ="https://goo.gl/maps/QW24xXuv98w6MHvm6">MVR</>. and despite recent In field studies that DAIL conducted utilizing WayFind, it was run on a Microsoft Surface tablet with a stylus. However, WayFind was created with modularity in mind—it can be run on any platform or device, and researchers of any discipline can tailor it to their specific research needs.
 
 ## Setup
 WayFind is being run on Python v. 3.9.12.
@@ -36,22 +36,23 @@ Depending on how your Python installation is set up.
   
 ### 3. Mode Selection
 
-There are two currently supported modes of WayFind:
-1. Live Tracking
-2. Validation
+Upon start, the user will be prompted with the following menu.
 
 <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/modes.png" width=150px height=150px>
 
-## Modularity
+There are two currently supported modes of WayFind:
+1. Live Tracking - researchers follow study participants in live experiments tracking location and behavioral markers
+2. Validation - researchers validate live data post-experiment via cross-reference (e.g. GoPro footage) and confirm via app
 
-### The Map
+## Modularity
+The following section details how WayFind can be tailored to other experimental settings.
 
 ### Buttons
+
+### Maps
 
 ### Survey
 
 ### Markers
 
 ### Landmarks
-
-### Live Tracking vs. Validation
