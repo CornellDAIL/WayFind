@@ -4,7 +4,7 @@ Made by Arthur Wayne, Qi Yang, and Saleh Kalantari.
 ![alt text](https://github.com/CornellDAIL/WayFind/blob/main/images/sample.gif)
 
 ## Description
-This project was initially created as a research tool to track behavioral markers and indoor location data given the lack of any existing accurate, low-cost options. However, WayFind was created with modularity in mind so that researchers of any discipline can tailor it to their specific research needs.
+WayFind was created a multi-modal research tool to track behavioral markers and indoor location data given the lack of any existing accurate, low-cost options. In field studies that DAIL conducted utilizing WayFind, it was run on a Microsoft Surface tablet with a stylus. However, WayFind was created with modularity in mind—it can be run on any platform or device, and researchers of any discipline can tailor it to their specific research needs.
 
 ## Setup
 WayFind is being run on Python v. 3.9.12.
@@ -39,6 +39,8 @@ Depending on how your Python installation is set up.
 There are two currently supported modes of WayFind:
 1. Live Tracking
 2. Validation
+
+![alt text](https://github.com/CornellDAIL/WayFind/blob/main/images/modes.png)
 
 ## Modularity
 
