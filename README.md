@@ -6,7 +6,7 @@ Made by Arthur Wayne, Qi Yang, and Saleh Kalantari.
 ## Description
 WayFind was created a multi-modal research tool to track live indoor location and behavioral marker data given the lack of any existing accurate, low-cost options. GPS, Wifi, Bluetooth methods are not cost-effective nor feasible to use indoors within a multi-story builidng, in this case <a href ="https://goo.gl/maps/QW24xXuv98w6MHvm6">MVR</a>.
 
-In field studies that DAIL conducted utilizing WayFind, researchers ran WayFind on a Microsoft Surface tablet with a stylus. Participants were fitted with additional data-collecting equipment including an EEG headset, physical motion sensors, a GSR sensor, a GoPro, and a joystick to measure intra-navigation uncertainty.
+In field studies that DAIL conducted with WayFind, researchers ran WayFind on a Microsoft Surface tablet with a stylus. Participants were fitted with additional data-collecting equipment including an EEG headset, physical motion sensors, a GSR sensor, a GoPro, and a joystick to measure intra-navigation uncertainty.
 
 WayFind was created with modularity in mind—it can be run on any platform or device, and researchers of any discipline can tailor it to their specific research needs.
 
