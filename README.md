@@ -20,6 +20,8 @@ WayFind utilizes the following libraries and versions for its functionality:
 - datetime (legacy)
 - logging (legacy)
 
+Please install them prior to start.
+
 ### Start
 
 Once you've installed run WayFind, open your command prompt and run
