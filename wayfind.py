@@ -452,7 +452,7 @@ class PopupWindow(object):
 				qtext = SURVEY.iloc[i,1]
 				if qtype == "slider":
 					qrange = list(map(int,SURVEY.iloc[i,2].split(",")))
-					self.create_slider(top, qtext, qrange)
+					self.create_slider(top, qtext, qrange, i)
 				elif qtype == "textbox":
 					self.create_textbox(top, qtext)
 				else:
@@ -460,7 +460,7 @@ class PopupWindow(object):
 		self.b = tk.Button(top, text='Ok', command=partial(self.cleanup, survey_type))
 		self.b.pack(side = 'top')
 
-	def create_slider(self, top, qtext, qrange):
+	def create_slider(self, top, qtext, qrange, index):
 		# slider
 		self.popup_resp.append(tk.DoubleVar())
 		slider_label = tk.Label(
@@ -473,7 +473,7 @@ class PopupWindow(object):
 			from_=qrange[0],
 			to=qrange[1],
 			orient='horizontal',  # vertical
-			variable=self.popup_resp[i],
+			variable=self.popup_resp[index],
 			length = 300
 		)
 		slider.pack(
