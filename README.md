@@ -89,7 +89,7 @@ A press of the "Survey" button opens a popup that is formatted in accordance wit
 
 To customize the survey questions asked to a user, `survey.csv` can be modified. The file contains three columns: `type`, `question`, and `range`. `type` takes in either `slider` or `textbox`. `question` refers to the text which will appear above the respective slider or textbox. `range` is only applicable when `type` is `slider`, and takes in an integer range e.g. "-80,80." Below is what the default survey layout appears as.
 
-<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/surveyexample.png" width=184px height=100px>
+<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/examplesurvey.png" width=184px height=100px>
 
 Answers to the survey are saved in `/saved_data` as `survey_resp.csv`. 
 
