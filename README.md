@@ -68,6 +68,19 @@ There are two currently supported modes of WayFind: Live Tracking and Validation
 
 ## Recorded Data
 
+Data can be recorded and saved through either Live Tracking or Validation mode. In the case of the former the naming scheme is `livetrack-YYYY-MM-DD.csv`, and in the case of the later it is `validation-YYYY-MM-DD.csv`. `empty.csv` is used if no data has been recored. 
+
+The following columns, accompanied here by descriptions, appear in a recorded data file:
+- `time` : system time in format `YYYY-MM-DD HH:MM:SS`
+- `unix` : <a href = "https://en.wikipedia.org/wiki/Unix_time">unix time</a> (e.g. 1674445088.419198)
+- `floor` : the floor the data was recorded on, denoted by image name (explained later in Map)
+- `marker` : either "Point" or the current marker
+- `validation` : (validation mode only) timestamp entered, else empty
+- `x` : relative x position between [0,1]
+- `y` : relative y position between [0,1]
+
+Survey response data is saved as `survey_resp.csv`
+
 ## Modularity
 The following section details how WayFind can be tailored to other experimental settings.
 
@@ -87,7 +100,7 @@ The map, which takes up a majority of the main GUI, is a Tkiner Canvas object wi
 ### Survey
 A press of the "Survey" button opens a popup that is formatted in accordance with `survey.csv` which is found in `/presets`. There are two types of survey questions: `slider` and `textbox`. Sliders give the user the option to input a numerical value on a fixed scale (e.g. overall uncertainty during task). Textboxes allow for alphanumeric input (e.g. participant ID). 
 
-To customize the survey questions asked to a user, `survey.csv` can be modified. The file contains three columns: `type`, `question`, and `range`. `type` takes in either `slider` or `textbox`. `question` refers to the text which will appear above the respective slider or textbox. `range` is only applicable when `type` is `slider`, and takes in an integer range e.g. "-80,80." Below is what the default survey layout appears as.
+To customize the survey questions asked to a user, `survey.csv` can be modified. The file contains three columns: `type`, `question`, and `range`. `type` takes in either `slider` or `textbox`. `question` refers to the text which will appear above the respective slider or textbox. `range` is only applicable when `type` is `slider`, and takes in an integer range e.g. "-80,80." Below is what the (default) survey layout appears as.
 
 <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/examplesurvey.png" width=184px height=100px>
 
@@ -99,6 +112,8 @@ The Markers feature is for researchers to record behavioral relevant behavioral 
 
 ### Landmarks
 
+The landmarks feature plots a series of yellow (default) points to assist the researcher with orienting themselves and their subject during or after the experiment. By default, there are no landmarks plotted. To add landmarks, data should be added to `landmarks.csv` in `/presets` which contains three columns: `X`, `Y`, and `Floor`. `X` and `Y` refer to relative x and y position between [0,1] and `Floor` refers to the name of the image file of the floor the plot will be on, excluding file extension (e.g. G.jpg -> Floor = G).
+
 ### Buttons
 Once Live Tracking mode is selected, the following menu will appear to let the user choose which buttons she would like to use.
 
@@ -107,3 +122,5 @@ Once Live Tracking mode is selected, the following menu will appear to let the u
 As the GUI is Tkinter-based, adding to or editing the existing functionality of buttons requires editing code. Within `wayfind.py`, lines 80-135 define the button layout and function calls triggered upon a button press. All functions within the code are preceded with a comment that summarizes functionalities. New functions can be created can be or existing ones can be tailored to researchers' task-specific needs.
 
 ### Constants
+
+`constants.py` allows for modification of any default parameters, denoted by "(default)" above.
