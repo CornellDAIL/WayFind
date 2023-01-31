@@ -91,7 +91,7 @@ A press of the "Survey" button opens a popup that is formatted in accordance wit
 
 ### Buttons
 Once Live Tracking mode is selected, the following menu will appear to let the user choose which buttons she would like to use.
-<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/buttons.png" width=150px height=25px>
+<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/buttons.png" width=300px height=50px>
 
 As the GUI is Tkinter-based, adding to or editing the existing functionality of buttons requires editing code. Within `wayfind.py`, lines 80-135 define the button layout and function calls triggered upon a button press. All functions within the code are preceded with a comment that summarizes functionalities. New functions can be created can be or existing ones can be tailored to researchers' task-specific needs.
 
