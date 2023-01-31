@@ -1,5 +1,5 @@
 # WayFind: modular behavioral research and data collection tool
-Made by Arthur Wayne with guidance from PhD candidate Qi Yang, and Professor Saleh Kalantari. 
+By Arthur Wayne with guidance from PhD candidate Qi Yang, and Professor Saleh Kalantari. 
 
 ![alt text](https://github.com/CornellDAIL/WayFind/blob/main/images/sample.gif)
 
@@ -64,6 +64,8 @@ There are two currently supported modes of WayFind: Live Tracking and Validation
   - Undo/redo actions 
 - The Validation interface differs only slightly from Live Tracking in that after any plot or behavioral marker is recorded, a pop-up asking for a time-stamp will appear.
 
+## Recorded Data
+
 ## Modularity
 The following section details how WayFind can be tailored to other experimental settings.
 
@@ -87,9 +89,11 @@ To customize the survey questions asked to a user, `survey.csv` can be modified.
 
 <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/surveyexample.png" width=184px height=100px>
 
+Answers to the survey are saved in `/saved_data` as `survey_resp.csv`. 
+
 ### Markers
 
-[TO CONTINUE]
+The Markers feature is for researchers to record behavioral relevant behavioral markers during the experiment. For the purposes of our experiment, markers are pre-defined and sequential. For this reason, markers are passed as an ordered list of text via `marker_sequence.csv` in `/presets`. The csv file contains one column, `markers` which holds the sequenced marker list. Customization is simply a manner of changing the text within the `markers` column. Pressing the marker button, the largest button that is labeled with the current marker, will record the current marker and time. The user is given the option to toggle between the current or next marker.
 
 ### Landmarks
 
@@ -101,5 +105,3 @@ Once Live Tracking mode is selected, the following menu will appear to let the u
 As the GUI is Tkinter-based, adding to or editing the existing functionality of buttons requires editing code. Within `wayfind.py`, lines 80-135 define the button layout and function calls triggered upon a button press. All functions within the code are preceded with a comment that summarizes functionalities. New functions can be created can be or existing ones can be tailored to researchers' task-specific needs.
 
 ### Constants
-
-## Accessing Recorded Data
