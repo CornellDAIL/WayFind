@@ -64,6 +64,8 @@ There are two currently supported modes of WayFind: Live Tracking and Validation
   - Undo/redo actions 
 - The Validation interface differs only slightly from Live Tracking in that after any plot or behavioral marker is recorded, a pop-up asking for a time-stamp will appear.
 
+<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/timestamp.png" width=137px height=100px>
+
 ## Recorded Data
 
 ## Modularity
