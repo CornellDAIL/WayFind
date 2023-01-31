@@ -81,16 +81,21 @@ There are four python files in the root directory:
 The map, which takes up a majority of the main GUI, is a Tkiner Canvas object with a 7:5 (default) aspect ratio. The images supplied are of dimension of 12600 × 9000 which then are rescaled to 1050 x 816 (default). To change what map(s) are displayed, two changes need to be made. First, `.jpg` images of the maps must be placed into the `/images` directory. Second, within `constants.py`, the elements of the `IMG_FILES` list must be changed to match the name of the map image files. Keep in mind that order matters, and order is ascending in terms of floor number.
 
 ### Survey
-A press of the "Survey" button opens a popup that is formatted in accordance with `survey.csv` which is found in `/presets`.
+A press of the "Survey" button opens a popup that is formatted in accordance with `survey.csv` which is found in `/presets`. There are two types of survey questions: `slider` and `textbox`. Sliders give the user the option to input a numerical value on a fixed scale (e.g. overall uncertainty during task). Textboxes allow for alphanumeric input (e.g. participant ID). 
 
-[to continue!!!]
+To customize the survey questions asked to a user, `survey.csv` can be modified. The file contains three columns: `type`, `question`, and `range`. `type` takes in either `slider` or `textbox`. `question` refers to the text which will appear above the respective slider or textbox. `range` is only applicable when `type` is `slider`, and takes in an integer range e.g. "-80,80." Below is what the default survey layout appears as.
+
+<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/surveyexample.png" width=184px height=100px>
 
 ### Markers
+
+[TO CONTINUE]
 
 ### Landmarks
 
 ### Buttons
 Once Live Tracking mode is selected, the following menu will appear to let the user choose which buttons she would like to use.
+
 <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/buttons.png" width=300px height=50px>
 
 As the GUI is Tkinter-based, adding to or editing the existing functionality of buttons requires editing code. Within `wayfind.py`, lines 80-135 define the button layout and function calls triggered upon a button press. All functions within the code are preceded with a comment that summarizes functionalities. New functions can be created can be or existing ones can be tailored to researchers' task-specific needs.
