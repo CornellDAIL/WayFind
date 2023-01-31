@@ -1,6 +1,6 @@
 import pandas as pd
 
-IMG_FILES = [  # list of image files in same directory
+IMG_FILES = [  # list of image files in same directory. Order matters!
     'T.jpg',
     'G.jpg',
     '1.jpg',
