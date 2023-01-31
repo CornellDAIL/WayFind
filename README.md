@@ -3,7 +3,7 @@ By Arthur Wayne with guidance from PhD candidate Qi Yang, and Professor Saleh Ka
 
 ![alt text](https://github.com/CornellDAIL/WayFind/blob/main/images/sample.gif)
 
-## Description
+## About
 WayFind is an open-source research tool for tracking live indoor location and behavioral marker data. After a literature review, we discovered a lack of any existing accurate, low-cost options to achieve this task. GPS, Wifi, Bluetooth methods are not cost-effective nor feasible to use indoors within a multi-story builidng, in our case <a href ="https://goo.gl/maps/QW24xXuv98w6MHvm6">MVR</a>.
 
 In field studies that DAIL conducted with WayFind, researchers ran WayFind on a Microsoft Surface tablet with a stylus. Participants were fitted with additional data-collecting equipment including an EEG headset, physical motion sensors, a GSR sensor, a GoPro, and a joystick to measure intra-navigation uncertainty.
