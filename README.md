@@ -44,14 +44,22 @@ Upon start, the user will be prompted with the following menu.
 
 <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/modes.png" width=150px height=150px>
 
-There are two currently supported modes of WayFind:
-1. Live Tracking - researchers follow study participants in live experiments tracking location and behavioral markers
-2. Validation - researchers validate live data post-experiment via cross-reference (e.g. GoPro footage) and confirm via app
+There are two currently supported modes of WayFind.
+
+#### A. Live Tracking
+- researchers follow study participants in live experiments tracking location and behavioral markers
+- 
+ 
+#### B. Validation
+- researchers validate live data post-experiment via cross-referencing other data (e.g. GoPro footage) and confirm via app
+- the user is given the options to
+- - hi
 
 ## Modularity
-The following section details how WayFind can be tailored to other experimental settings.
+The following section details how WayFind can be tailored to other experimental settings. We will use Live Tracking mode as the basis for detailing modularity.
 
 ### Buttons
+<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/modes.png" width=150px height=150px>
 
 ### Maps
 
@@ -60,3 +68,5 @@ The following section details how WayFind can be tailored to other experimental 
 ### Markers
 
 ### Landmarks
+
+### Constants
