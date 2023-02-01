@@ -63,7 +63,7 @@ There are two currently supported modes of WayFind: Live Tracking and Validation
   - Track behavioral markers (explained below in <a href = "#Markers">Markers</a>)
   - Undo/redo actions 
 - The Validation interface differs only slightly from Live Tracking in that after any plot or behavioral marker is recorded, a pop-up asking for a time-stamp will appear.
-  - <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/timestamp.png" width=137px height=100px>
+  - <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/timestamp.png" width=150.7px height=110px>
 
 ## Recorded Data
 
@@ -102,7 +102,7 @@ A press of the "Survey" button opens a popup that is formatted in accordance wit
 
 To customize the survey questions asked to a user, `survey.csv` can be modified. The file contains three columns: `type`, `question`, and `range`. `type` takes in either `slider` or `textbox`. `question` refers to the text which will appear above the respective slider or textbox. `range` is only applicable when `type` is `slider`, and takes in an integer range e.g. "-80,80." Below is what the (default) survey layout appears as.
 
-<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/examplesurvey.png" width=184px height=100px>
+<img src="https://github.com/CornellDAIL/WayFind/blob/main/images/examplesurvey.png" width=211.6px height=115px>
 
 Answers to the survey are saved in `/saved_data` as `survey_resp.csv`. 
 
