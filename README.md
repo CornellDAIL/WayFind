@@ -77,7 +77,7 @@ The following columns, accompanied here by descriptions, appear in a recorded da
 - `validation` : (validation mode only) timestamp entered, else empty
 - `x` : relative x position between [0,1]
 - `y` : relative y position between [0,1]
-- <i>Note: coordinate (0,0) is the <ul>top left</ul> of the map.</i>
+- <i>Note: coordinate (0,0) is the <u>top left</u> of the map.</i>
 
 Survey response data is saved as `survey_resp.csv`
 
