@@ -72,7 +72,7 @@ Data can be recorded and saved through either Live Tracking or Validation mode. 
 The following columns, accompanied here by descriptions, appear in a recorded data file:
 - `time` : system time in format `YYYY-MM-DD HH:MM:SS`
 - `unix` : <a href = "https://en.wikipedia.org/wiki/Unix_time">unix time</a> (e.g. 1674445088.419198)
-- `floor` : the floor the data was recorded on, denoted by image name (explained below in <a href = "#Map">"Map"</a>)
+- `floor` : the floor the data was recorded on, denoted by image name (explained below in <a href = "#Maps">Maps</a>)
 - `marker` : either "Point" or the current marker
 - `validation` : (validation mode only) timestamp entered, else empty
 - `x` : relative x position between [0,1]
