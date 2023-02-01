@@ -28,7 +28,7 @@ Please install them prior to start.
 
 ### 2. Start
 
-Once you've installed run WayFind, open your command prompt and run
+Once you've installed the dependencies, you can run WayFind. Open your command prompt and run
 
 `python start.py`
 
