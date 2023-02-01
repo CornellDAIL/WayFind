@@ -44,7 +44,7 @@ Upon start, the user will be prompted with the following menu.
 
 <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/modes.png" width=150px height=150px>
 
-There are two currently supported modes of WayFind: Live Tracking and Validation. In either mode data is set to autosave every five seconds (default).
+There are two currently supported modes of WayFind: Live Tracking and Validation. In either mode data is set to autosave every five seconds <i>(default)</i>.
 
 #### A. Live Tracking
 - Intended usage: researchers follow study participants in live experiments tracking location and behavioral markers.
@@ -95,12 +95,12 @@ There are four python files in the root directory:
 `start.py` and `select_layout.py` are meta-files that operate the pre-app menus. These menus enable the user to determine the appropriate mode and layout and communicate this information to `wayfind.py`. The core of the codebase is in `wayfind.py`. `constants.py` contains relative constant variables, denoted in all-caps, following pep-8 naming conventions. All GUI are based in `Tkinter`. We will use Live Tracking mode as the basis for detailing modularity.
 
 ### Maps
-The map, which takes up a majority of the main GUI, is a Tkiner Canvas object with a 7:5 (default) aspect ratio. The images supplied are of dimension of 12600 × 9000 which then are rescaled to 1050 x 816 (default). To change what map(s) are displayed, two changes need to be made. First, `.jpg` images of the maps must be placed into the `/images` directory. Second, within `constants.py`, the elements of the `IMG_FILES` list must be changed to match the name of the map image files. Keep in mind that order matters, and order is ascending in terms of floor number.
+The map, which takes up a majority of the main GUI, is a Tkiner Canvas object with a 7:5 <i>(default)</i> aspect ratio. The images supplied are of dimension of 12600 × 9000 which then are rescaled to 1050 x 816 <i>(default)</i>. To change what map(s) are displayed, two changes need to be made. First, `.jpg` images of the maps must be placed into the `/images` directory. Second, within `constants.py`, the elements of the `IMG_FILES` list must be changed to match the name of the map image files. Keep in mind that order matters, and order is ascending in terms of floor number.
 
 ### Survey
 A press of the "Survey" button opens a popup that is formatted in accordance with `survey.csv` which is found in `/presets`. There are two types of survey questions: `slider` and `textbox`. Sliders give the user the option to input a numerical value on a fixed scale (e.g. overall uncertainty during task). Textboxes allow for alphanumeric input (e.g. participant ID). 
 
-To customize the survey questions asked to a user, `survey.csv` can be modified. The file contains three columns: `type`, `question`, and `range`. `type` takes in either `slider` or `textbox`. `question` refers to the text which will appear above the respective slider or textbox. `range` is only applicable when `type` is `slider`, and takes in an integer range e.g. "-80,80." Below is what the (default) survey layout appears as.
+To customize the survey questions asked to a user, `survey.csv` can be modified. The file contains three columns: `type`, `question`, and `range`. `type` takes in either `slider` or `textbox`. `question` refers to the text which will appear above the respective slider or textbox. `range` is only applicable when `type` is `slider`, and takes in an integer range e.g. "-80,80." Below is what the <i>(default)</i> survey layout appears as.
 
 <img src="https://github.com/CornellDAIL/WayFind/blob/main/images/examplesurvey.png" width=211.6px height=115px>
 
@@ -112,7 +112,7 @@ The Markers feature is for researchers to record behavioral relevant behavioral 
 
 ### Landmarks
 
-The landmarks feature plots a series of yellow (default) points to assist the researcher with orienting themselves and their subject during or after the experiment. By default, there are no landmarks plotted. To add landmarks, data should be added to `landmarks.csv` in `/presets` which contains three columns: `X`, `Y`, and `Floor`. `X` and `Y` refer to relative x and y position between [0,1] and `Floor` refers to the name of the image file of the floor the plot will be on, excluding file extension (e.g. G.jpg -> Floor = G).
+The landmarks feature plots a series of yellow <i>(default)</i> points to assist the researcher with orienting themselves and their subject during or after the experiment. By default, there are no landmarks plotted. To add landmarks, data should be added to `landmarks.csv` in `/presets` which contains three columns: `X`, `Y`, and `Floor`. `X` and `Y` refer to relative x and y position between [0,1] and `Floor` refers to the name of the image file of the floor the plot will be on, excluding file extension (e.g. G.jpg -> Floor = G).
 
 ### Buttons
 Once Live Tracking mode is selected, the following menu will appear to let the user choose which buttons she would like to use.
@@ -123,4 +123,4 @@ As the GUI is Tkinter-based, adding to or editing the existing functionality of 
 
 ### Constants
 
-`constants.py` allows for modification of any default parameters, denoted by "(default)" above.
+`constants.py` allows for modification of any default parameters, denoted by <i>(default)</i> above.
