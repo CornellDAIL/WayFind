@@ -72,7 +72,7 @@ Data can be recorded and saved through either Live Tracking or Validation mode. 
 The following columns, accompanied here by descriptions, appear in a recorded data file:
 - `time` : system time in format `YYYY-MM-DD HH:MM:SS`
 - `unix` : <a href = "https://en.wikipedia.org/wiki/Unix_time">unix time</a> (e.g. 1674445088.419198)
-- `floor` : the floor the data was recorded on, denoted by image name (explained below in "Modularity" -> "Map"))
+- `floor` : the floor the data was recorded on, denoted by image name (explained below in <a href = "#Map">"Map"</a>)
 - `marker` : either "Point" or the current marker
 - `validation` : (validation mode only) timestamp entered, else empty
 - `x` : relative x position between [0,1]
@@ -91,7 +91,7 @@ There are four python files in the root directory:
 3. `wayfind.py`
 4. `constants.py`
 
-`start.py` and `select_layout.py` are meta-files that operate the pre-app menus. These menus enable the user to determine the appropriate mode and layout and communicate this information to `wayfind.py`. The core of the codebase is in `wayfind.py`. `constants.py` contains relative constant variables, denoted in all-caps, following pep-8 naming conventions. All GUI are based in `Tkinter`. is We will use Live Tracking mode as the basis for detailing modularity.
+`start.py` and `select_layout.py` are meta-files that operate the pre-app menus. These menus enable the user to determine the appropriate mode and layout and communicate this information to `wayfind.py`. The core of the codebase is in `wayfind.py`. `constants.py` contains relative constant variables, denoted in all-caps, following pep-8 naming conventions. All GUI are based in `Tkinter`. We will use Live Tracking mode as the basis for detailing modularity.
 
 ### Maps
 The map, which takes up a majority of the main GUI, is a Tkiner Canvas object with a 7:5 (default) aspect ratio. The images supplied are of dimension of 12600 × 9000 which then are rescaled to 1050 x 816 (default). To change what map(s) are displayed, two changes need to be made. First, `.jpg` images of the maps must be placed into the `/images` directory. Second, within `constants.py`, the elements of the `IMG_FILES` list must be changed to match the name of the map image files. Keep in mind that order matters, and order is ascending in terms of floor number.
